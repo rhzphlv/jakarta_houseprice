@@ -20,7 +20,7 @@ j=0
 for i in source:
 	try:
 		url = i
-		driver = webdriver.Safari()
+		driver = webdriver.Chrome()
 		driver.get(url)
 		time.sleep(2)
 		soup = BeautifulSoup(driver.page_source,'lxml')
